@@ -9,6 +9,10 @@ body {
   display: none;
 }
 
+input{
+  display: none;
+}
+
 /* selecting X or O in a box will display selected letter as a result */
 input[value="yesX"]:checked + label + input + label + .selection-result,
 input[value="yesO"]:checked + label + .selection-result {
