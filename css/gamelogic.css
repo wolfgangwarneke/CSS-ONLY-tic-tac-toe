@@ -31,6 +31,8 @@ input[value="yesO"]:checked + label::after {
   content: counter(yscore);
 }*/
 
-#UL-X:checked ~ #UM-X:checked ~ #UR-X:checked ~ .winnersbox::after {
+#UL-X:checked ~ #UM-X:checked ~ #UR-X:checked ~ .winnersbox::after,
+#ML-X:checked ~ #MM-X:checked ~ #MR-X:checked ~ .winnersbox::after,
+#LL-X:checked ~ #LM-X:checked ~ #LR-X:checked ~ .winnersbox::after {
   content: "X WINS";
 }
