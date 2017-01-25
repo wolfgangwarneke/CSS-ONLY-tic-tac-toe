@@ -1,9 +1,3 @@
-/* setting counters for scorings */
-body {
-    counter-reset: xscore;
-    counter-reset: yscore;
-}
-
 /* hide box outcomes initially */
 .selection-result {
   display: none;
