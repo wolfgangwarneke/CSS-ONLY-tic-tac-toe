@@ -1,0 +1,16 @@
+/* hide box outcomes initially */
+.selection-result {
+  display: none;
+}
+
+/* selecting X or O in a box will display selected letter as a result */
+input[value="yesX"]:checked + label + input + label + .selection-result,
+input[value="yesO"]:checked + label + .selection-result {
+  display: inline-block;
+}
+  input[value="yesX"]:checked + label + input + label + .selection-result .o {
+    display: none;
+  }
+  input[value="yesO"]:checked + label + .selection-result .x {
+    display: none;
+  }

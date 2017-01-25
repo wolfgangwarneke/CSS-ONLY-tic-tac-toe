@@ -10,3 +10,17 @@
 .gamebox:nth-child(3n+4) {
   clear: left;
 }
+
+body * {
+ display: inline-block;
+ float: left;
+ margin-top: 10px;
+}
+
+input:nth-of-type(2n+3) {
+  margin-left: 40px;
+}
+
+input:nth-of-type(6n+7) {
+  clear: left;
+}
