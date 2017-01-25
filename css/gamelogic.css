@@ -15,14 +15,17 @@ input[value="yesO"]:checked + label + .selection-result {
   margin-right: -28.6px;
   margin-bottom: -18.33px;
 }
+  /* remove .o outcome since X was selected */
   input[value="yesX"]:checked + label + input + label + .selection-result .o {
     display: none;
   }
+  /* remove .x outcome since O was selected */
   input[value="yesO"]:checked + label + .selection-result .x {
     display: none;
   }
 
 /* display win message for X when X achieves 3 in a row */
+/* first three are rows, next three are columns, last two are diagonals*/
 #UL-X:checked ~ #UM-X:checked ~ #UR-X:checked ~ .winnersbox::after,
 #ML-X:checked ~ #MM-X:checked ~ #MR-X:checked ~ .winnersbox::after,
 #LL-X:checked ~ #LM-X:checked ~ #LR-X:checked ~ .winnersbox::after,

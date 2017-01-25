@@ -1,3 +1,7 @@
+/* for the most part I've tried to separate styling and formatting CSS from
+the actual game logic and game interactivity CSS.
+This probably should be refactored into a wrapper div*/
+
 body {
   background-color: #e5e599;
 }
