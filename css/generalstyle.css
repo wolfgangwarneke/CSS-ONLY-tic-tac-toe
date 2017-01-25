@@ -24,3 +24,7 @@ input:nth-of-type(2n+3) {
 input:nth-of-type(6n+7) {
   clear: left;
 }
+
+.winnersbox {
+  font-size: 5em;
+}

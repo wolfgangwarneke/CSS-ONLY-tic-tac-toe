@@ -31,6 +31,6 @@ input[value="yesO"]:checked + label::after {
   content: counter(yscore);
 }*/
 
-#UR-O:checked {
-  box-shadow: 3px 3px 4px orange;
+#UL-X:checked ~ #UM-X:checked ~ #UR-X:checked ~ .winnersbox::after {
+  content: "X WINS";
 }
