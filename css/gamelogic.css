@@ -33,6 +33,11 @@ input[value="yesO"]:checked + label::after {
 
 #UL-X:checked ~ #UM-X:checked ~ #UR-X:checked ~ .winnersbox::after,
 #ML-X:checked ~ #MM-X:checked ~ #MR-X:checked ~ .winnersbox::after,
-#LL-X:checked ~ #LM-X:checked ~ #LR-X:checked ~ .winnersbox::after {
+#LL-X:checked ~ #LM-X:checked ~ #LR-X:checked ~ .winnersbox::after,
+#UL-X:checked ~ #ML-X:checked ~ #LL-X:checked ~ .winnersbox::after,
+#UM-X:checked ~ #MM-X:checked ~ #LM-X:checked ~ .winnersbox::after,
+#UR-X:checked ~ #MR-X:checked ~ #LR-X:checked ~ .winnersbox::after,
+#UL-X:checked ~ #MM-X:checked ~ #LR-X:checked ~ .winnersbox::after,
+#UR-X:checked ~ #MM-X:checked ~ #LL-X:checked ~ .winnersbox::after {
   content: "X WINS";
 }
