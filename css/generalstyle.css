@@ -1,14 +1,23 @@
+body {
+  background-color: #e5e599;
+}
+
 body * {
  display: inline-block;
  float: left;
- margin-top: 30px;
- border: 1px solid red;
+ margin-top: 24px;
+ margin-bottom: 24px;
 }
 
 .winnersbox {
   font-size: 5em;
+  text-shadow: 0px 0px 15px rgba(256, 48, 160, .6);
   display: block;
   float: none;
+}
+
+label:hover {
+  text-shadow: 0px 0px 15px red;
 }
 
 label:first-of-type,
@@ -29,4 +38,27 @@ label:nth-of-type(6n+7) {
 .selection-result {
   font-size: 2em;
   font-weight: bold;
+  height: 38px;
+}
+
+.selection-result div {
+  margin-left: -24px;
+  margin-top: -12px;
+}
+
+.selection-result div::first-letter {
+  background-color: slategrey;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.selection-result .x {
+  color: #e4e4f4;
+  text-shadow: -2px 2px 2px rgba(20, 23, 99, .9);
+}
+
+.selection-result .o {
+  color: #f00;
+  text-shadow: 2px 2px 2px rgba(230, 230, 230, .9);
 }

@@ -9,7 +9,8 @@ body {
   display: none;
 }
 
-input{
+/* hide radio buttons */
+input[type="radio"]{
   display: none;
 }
 
@@ -17,6 +18,8 @@ input{
 input[value="yesX"]:checked + label + input + label + .selection-result,
 input[value="yesO"]:checked + label + .selection-result {
   display: inline-block;
+  margin-right: -28.6px;
+  margin-bottom: -18.33px;
 }
   input[value="yesX"]:checked + label + input + label + .selection-result .o {
     display: none;
@@ -34,7 +37,7 @@ input[value="yesO"]:checked + label + .selection-result {
 #UR-X:checked ~ #MR-X:checked ~ #LR-X:checked ~ .winnersbox::after,
 #UL-X:checked ~ #MM-X:checked ~ #LR-X:checked ~ .winnersbox::after,
 #UR-X:checked ~ #MM-X:checked ~ #LL-X:checked ~ .winnersbox::after {
-  content: "X WINS";
+  content: "'X' wins";
 }
 
 /* display win message for O when O achieves 3 in a row */
@@ -46,5 +49,5 @@ input[value="yesO"]:checked + label + .selection-result {
 #UR-O:checked ~ #MR-O:checked ~ #LR-O:checked ~ .winnersbox::after,
 #UL-O:checked ~ #MM-O:checked ~ #LR-O:checked ~ .winnersbox::after,
 #UR-O:checked ~ #MM-O:checked ~ #LL-O:checked ~ .winnersbox::after {
-  content: "O WINS";
+  content: "'O' wins";
 }
