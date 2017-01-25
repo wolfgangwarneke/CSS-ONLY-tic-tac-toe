@@ -1,3 +1,9 @@
+/* setting counters for scorings */
+body {
+    counter-reset: xscore;
+    counter-reset: yscore;
+}
+
 /* hide box outcomes initially */
 .selection-result {
   display: none;
@@ -14,3 +20,17 @@ input[value="yesO"]:checked + label + .selection-result {
   input[value="yesO"]:checked + label + .selection-result .x {
     display: none;
   }
+
+/*input[value="yesX"]:checked + label::after {
+  counter-increment: xscore;
+  content: counter(xscore);
+}
+
+input[value="yesO"]:checked + label::after {
+  counter-increment: yscore;
+  content: counter(yscore);
+}*/
+
+#UR-O:checked {
+  box-shadow: 3px 3px 4px orange;
+}
